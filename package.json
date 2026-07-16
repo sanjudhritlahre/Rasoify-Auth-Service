@@ -21,14 +21,20 @@
     "fmt:fix": "prettier . --write",
     "fmt:check": "prettier . --check",
     "lint:fix": "eslint . --fix",
-    "lint:check": "eslint ."
+    "lint:check": "eslint .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.1.1",
     "eslint": "^10.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
     "prettier": "3.9.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.64.0"
+  },
+   "lint-staged": {
+    "*.ts": ["npm run fmt:fix", "npm run lint:fix"]
   }
 }
