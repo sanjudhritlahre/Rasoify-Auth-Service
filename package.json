@@ -1,0 +1,22 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "The User Management Service for Rasoify!",
+  "homepage": "https://github.com/sanjudhritlahre/Rasoify-Auth-Service#readme",
+  "bugs": {
+    "url": "https://github.com/sanjudhritlahre/Rasoify-Auth-Service/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjudhritlahre/Rasoify-Auth-Service.git"
+  },
+  "license": "ISC",
+  "author": "Sanju Dhritlahre",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  }
+}
