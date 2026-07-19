@@ -11,6 +11,7 @@
     // See also https://aka.ms/tsconfig/module
     "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions": true,
+    "esModuleInterop": true,
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -37,6 +38,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
