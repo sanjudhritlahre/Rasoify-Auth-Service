@@ -13,7 +13,7 @@ export default defineConfig({
       projectService: true,
     },
   },
-  ignores: ["**/node_modules/**", "dist/**", "eslint.config.mjs"],
+  ignores: ["**/node_modules/**", "dist/**", "eslint.config.mjs", "jest.config.js"],
   rules: {
     // "no-console": "error",
   },

@@ -1,20 +1,16 @@
-import express, {
-  type NextFunction,
-  type Request,
-  type Response,
-} from "express";
+import express, { NextFunction, Request, Response } from "express";
 import type { HttpError } from "http-errors";
-import logger from "./config/logger.ts";
+import logger from "./config/logger";
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Welcom to Rasoify Auth Service!");
+app.get("/", (_req, res) => {
+  res.send("Welcome to Rasoify Auth Service!");
 });
 
 // Global Error Handler
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
+app.use((err: HttpError, _req: Request, res: Response, next: NextFunction) => {
+  void next;
   logger.error(err.message);
   const statusCode = err.statusCode || 500;
 
