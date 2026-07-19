@@ -34,7 +34,13 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.64.0"
   },
-   "lint-staged": {
-    "*.ts": ["npm run fmt:fix", "npm run lint:fix"]
+  "lint-staged": {
+    "*.ts": [
+      "npm run fmt:fix",
+      "npm run lint:fix"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

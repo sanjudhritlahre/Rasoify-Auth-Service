@@ -1,1 +1,3 @@
-console.log("Welcome to Rasoify!");
+import { Config } from "./config/index.js";
+
+console.log(Config.PORT);
