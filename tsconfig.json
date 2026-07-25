@@ -33,7 +33,12 @@
     "*.tsx",
     "*.js",
     "*.mjs",
-    "*.cjs"
+    "*.cjs",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "tests/**/*.js",
+    "tests/**/*.mjs",
+    "tests/**/*.cjs"
   ],
   "exclude": ["node_modules", "dist"]
 }
