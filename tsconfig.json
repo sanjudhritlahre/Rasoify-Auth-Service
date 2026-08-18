@@ -21,7 +21,9 @@
     "types": ["node", "jest"],
     "verbatimModuleSyntax": false,
     "isolatedModules": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
   },
   "include": [
     "src/**/*.ts",
