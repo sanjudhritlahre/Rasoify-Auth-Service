@@ -23,7 +23,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "experimentalDecorators": true
   },
   "include": [
     "src/**/*.ts",
